@@ -1,5 +1,5 @@
 
-<h2>Calculator app build by using <b>Js</b></h2>
+<h2>Calculator app <b>Js</b></h2>
 The Odin Project
 <br>
 
