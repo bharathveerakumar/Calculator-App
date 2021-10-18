@@ -11,16 +11,25 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-image: url('1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .cont{
-    width: 440px;
-    height: 90vh;
+    width: 400px;
+    min-height: 80vh;
+    max-height: 90vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
     padding: 10px;
-    border: 1px solid black;
+    box-shadow: 1px 1px 15px 1px black;
+    background-color: black;
+    border-radius: 30px;
 }
 
 .textarea{
@@ -31,7 +40,11 @@ body{
     padding: 10px;
     width: 100%;
     height: 100px;
-    border: 1px solid black;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 20px;
 }
 
 .ans{
@@ -40,6 +53,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    overflow: hidden;
 }
 
 .ta{
@@ -49,24 +63,65 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    overflow: hidden;
 }
 
 .clear, .ac{
-    padding: 0px 75px;
+    padding: 20px 55px;
+    background-color: mediumspringgreen;
+}
+
+[data-sign='+']{
+    background-color: red;
+}
+
+[data-sign='-']{
+    background-color: rgb(255, 217, 5);
+}
+
+[data-sign='/']{
+    background-color: pink;
+}
+
+[data-sign='*']{
+    background-color: blue;
+}
+
+[data-sign='^']{
+    background-color: green;
+}
+
+[data-sign='%']{
+    background-color: hotpink;
+}
+
+[data-key='.']{
+    background-color: greenyellow;
+}
+
+.equal{
+    background-color: lightsalmon;
+}
+
+[data-key='('], [data-key=')']{
+    background-color: mediumslateblue;
 }
 
 span{
-    padding: 1px 40px;
+    padding: 15px 30px;
     margin: 5px;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
+    background-color: grey;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 20px;
 }
 
 .ani{
     transform: scale(1.1, 1,1);
-    /* transition: 0.5s; */
-    background-color: blue;
+    background-color: black;
 }
